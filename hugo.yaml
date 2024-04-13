@@ -9,7 +9,7 @@ module:
     path: github.com/StefMa/hugo-fresh
 
 
-googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+googleAnalytics: G-KRSB623LMJ # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
 disableKinds:
 - taxonomy
@@ -62,9 +62,9 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Products
-    url: #section1
+    url: "#section1"
   - title: Services
-    url: #section2
+    url: "#section2"
   - title: Blog
     url: https://docs.lextudio.com/blog/
   - title: Books
