@@ -1,0 +1,232 @@
+baseURL: https://www.lextudio.com/
+languageCode: en-us
+title: LeXtudio Inc.
+
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
+
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description: |
+    Consulting company in Toronto, Canada that provides software products and consulting services.
+    Our products include #SNMP Family, PySNMP Family, and more related .NET, Python, and IIS.
+
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/lextudio.svg
+    link: /
+    # Default width/height. Uncomment if you need to change
+    width: 36
+    height: 36
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: LeXtudio Inc.
+    # Hero subtitle (optional)
+    subtitle: |
+      We are a Toronto based company that provides software products and consulting services. Our clients include many Fortune 500 companies.
+    # Button text
+    buttontext: Learn more
+    # Where the main hero button links to
+    buttonlink: "#section1"
+    # Hero image (from static/images/___)
+    image: boy.svg
+    # Footer logos (from static/images/logos/clients/*.svg)
+    # urls are optional
+    clientlogos:
+    - logo: airbus
+    - logo: vodafone
+    - logo: abb
+    - logo: l3harris
+
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Products
+    url: #section1
+  - title: Services
+    url: #section2
+  - title: Blog
+    url: https://docs.lextudio.com/blog/
+  - title: Books
+    sublinks:
+    - title: .NET Legend
+      url: http://www.lulu.com/shop/http://www.lulu.com/shop/yang-li/dot-net-legend/ebook/product-23449893.html
+    - title: Borland Legend More
+      url: https://leanpub.com/borlandlegendmore
+    # - title: Dropdown item
+    #   url: /
+  # - title: Log in
+  #   url: /
+  # - title: Sign up
+  #   url: /
+  #   button: true
+  # sidebar:
+  #   # Logo (from /images/logos/___.svg)
+  #   logo: fresh-square
+  #   sections:
+  #   - title: User
+  #     icon: user
+  #     links:
+  #     - text: Profile
+  #       url: /
+  #     - text: Account
+  #       url: /
+  #     - text: Settings
+  #       url: /
+  #   - title: Messages
+  #     icon: envelope
+  #     links:
+  #     - text: Inbox
+  #       url: /
+  #     - text: Compose
+  #       url: /
+  #   - title: Images
+  #     icon: image
+  #     links:
+  #     - text: Library
+  #       url: /
+  #     - text: Upload
+  #       url: /
+  #   - title: Settings
+  #     icon: cog
+  #     links:
+  #     - text: User settings
+  #       url: /
+  #     - text: App settings
+  #       url: /
+  section1:
+    title: Our Products
+    subtitle: We offer a mixture of commercial and open source solutions to empower your business.
+    tiles:
+    - title: "#SNMP Family"
+      icon: sharpsnmp
+      text: Complete SNMP solution for .NET developers.
+      url: https://www.sharpsnmp.com
+      buttonText: Learn more
+    - title: PySNMP Family
+      icon: pysnmp
+      text: Most popular Python SNMP library and utilities.
+      url: https://www.pysnmp.com
+      buttonText: Learn more
+    - title: Full Catalog
+      icon: catalog
+      text: More products for .NET, Python, and IIS users.
+      url: https://docs.lextudio.com
+      buttonText: Learn more
+  # section2:
+  #   title: Our Services
+  #   subtitle: We provide consulting services on our products as well as other technologies.
+  #   features:
+  #   - title: Powerful and unified interface
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     # Icon (from /images/illustrations/icons/___.svg)
+  #     icon: laptop-globe
+  #   - title: Cross-device synchronisation
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     icon: doc-sync
+  #   - title: Nomad system
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     icon: mobile-feed
+  # section3:
+  #   title: One platform
+  #   subtitle: To rule them all
+  #   image: illustrations/mockups/app-mockup.png
+  #   buttonText: Get started
+  #   buttonLink: "#"
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Accountant
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Financial Analyst
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: HR Manager
+  #     img: 3
+  section5:
+    title: Contact Us
+    subtitle: We'd love to hear from you
+    buttonText: Send Message
+    action: https://formspree.io/f/xayrlaky
+    method: POST
+  footer:
+    # Logo (from /images/logos/___)
+    logo: lextudio.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/lextudio
+      # Icons are from Font Awesome
+      icon: github
+    # - link: https://dribbble.com/#
+    #   icon: dribbble
+    # - link: https://facebook.com/#
+    #   icon: facebook
+    - link: https://twitter.com/lextudio
+      icon: twitter
+    - link: https://www.linkedin.com/company/lextudio
+      icon: linkedin
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Products"
+        links:
+        - text: "#SNMP Family"
+          link: https://www.sharpsnmp.com
+        - text: PySNMP Family
+          link: https://www.pysnmp.com
+        - text: More on Catalog
+          link: https://docs.lextudio.com
+        # - text: Our roadmap
+        #   link: /
+        # - text: AGB
+        #   link: /agb
+      column2:
+        title: "Services"
+        links:
+        - text: Bugfixes
+          link: https://docs.lextudio.com/services/patching.html
+        - text: Consulting
+          link: https://docs.lextudio.com/services/consulting.html
+        - text: Trainings
+          link: https://docs.lextudio.com/services/training.html
+        # - text: Developers
+        #   link: /
+      column3:
+        title: "Docs"
+        links:
+        - text: "LeXtudio Docs"
+          link: https://docs.lextudio.com/
+        - text: Blog
+          link: https://docs.lextudio.com/blog/
+        - text: Privacy Policy
+          link: https://docs.lextudio.com/privacy
