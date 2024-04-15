@@ -64,7 +64,7 @@ params:
   - title: Products
     url: "#section1"
   - title: Services
-    url: "#section2"
+    url: "#section5"
   - title: Blog
     url: https://docs.lextudio.com/blog/
   - title: Books
@@ -171,7 +171,7 @@ params:
   #     img: 3
   section5:
     title: Contact Us
-    subtitle: We'd love to hear from you
+    subtitle: We'd love to hear from you (product feedback, trials, service requests, etc.)!
     buttonText: Send Message
     action: https://formspree.io/f/xayrlaky
     method: POST
