@@ -13,7 +13,6 @@ googleAnalytics: G-KRSB623LMJ # Put in your tracking code without quotes like th
 # Disables warnings
 disableKinds:
 - taxonomy
-- taxonomyTerm
 markup:
   goldmark:
     renderer:
