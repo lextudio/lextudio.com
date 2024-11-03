@@ -23,8 +23,10 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
   description: |
-    Consulting company in Toronto, Canada that provides software products and consulting services.
-    Our products include #SNMP Family, PySNMP Family, and more related .NET, Python, and IIS.
+    LeXtudio Inc., headquartered in Toronto, Canada, specializes in delivering advanced software solutions and consulting services.
+    Our flagship offerings include the #SNMP Family, a comprehensive suite for .NET developers, and the PySNMP Family, a leading
+    Python SNMP library and utilities. We also provide a diverse range of products tailored for .NET, Python, and IIS environments.
+    Our clients include numerous Fortune 500 companies, underscoring our commitment to excellence and reliability.
 
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
@@ -43,7 +45,10 @@ params:
     title: LeXtudio Inc.
     # Hero subtitle (optional)
     subtitle: |
-      We are a Toronto based company that provides software products and consulting services. Our clients include many Fortune 500 companies.
+      This company, headquartered in Toronto, Canada, specializes in delivering advanced software solutions and consulting services.
+
+      Our clients include numerous Fortune 500 companies, underscoring our commitment to excellence and reliability.
+
     # Button text
     buttontext: Learn more
     # Where the main hero button links to
@@ -55,8 +60,10 @@ params:
     clientlogos:
     - logo: airbus
     - logo: vodafone
-    - logo: abb
+    - logo: sony
+    - logo: bosch
     - logo: l3harris
+    - logo: abb
 
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
@@ -119,7 +126,7 @@ params:
     tiles:
     - title: "#SNMP Family"
       icon: sharpsnmp
-      text: Complete SNMP solution for .NET developers.
+      text: Complete C# SNMP solution for .NET developers.
       url: https://www.sharpsnmp.com
       buttonText: Learn more
     - title: PySNMP Family
