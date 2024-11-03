@@ -45,9 +45,9 @@ params:
     title: LeXtudio Inc.
     # Hero subtitle (optional)
     subtitle: |
-      This company, headquartered in Toronto, Canada, specializes in delivering advanced software solutions and consulting services.
-
-      Our clients include numerous Fortune 500 companies, underscoring our commitment to excellence and reliability.
+      We are a proudly Canadian company based in Toronto, specializing in advanced software solutions and consulting services.
+      Our clients include a diverse range of organizations, from startups to Fortune 500 companies, reflecting our commitment
+      to excellence, reliability, and innovation.
 
     # Button text
     buttontext: Learn more
