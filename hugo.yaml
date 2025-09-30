@@ -23,10 +23,11 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
   description: |
-    LeXtudio Inc., headquartered in Toronto, Canada, specializes in delivering advanced software solutions and consulting services.
+    LeXtudio Inc., headquartered in Toronto, Canada, specializes in delivering advanced software solutions, Azure cloud architecture, modernization, and security consulting services.
     Our flagship offerings include the #SNMP Family, a comprehensive suite for .NET developers, and the PySNMP Family, a leading
     Python SNMP library and utilities. We also provide a diverse range of products tailored for .NET, Python, and IIS environments.
-    Our clients include numerous Fortune 500 companies, underscoring our commitment to excellence and reliability.
+    We help organizations design secure, cost-optimized Azure environments and strengthen their application & infrastructure security posture.
+    Our clients include numerous Fortune 500 companies across aerospace, telecom, industrial, and technology sectors—underscoring our commitment to excellence and reliability.
 
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
@@ -45,9 +46,8 @@ params:
     title: LeXtudio Inc.
     # Hero subtitle (optional)
     subtitle: |
-      We are a proudly Canadian company based in Toronto, specializing in advanced software solutions and consulting services.
-      Our clients include a diverse range of organizations, from startups to Fortune 500 companies, reflecting our commitment
-      to excellence, reliability, and innovation.
+      We are a proudly Canadian company based in Toronto delivering advanced software, Azure cloud architecture & modernization, and security consulting.
+      From startups to Fortune 500 enterprises, we help teams build resilient, cost-efficient, and secure platforms—backed by our SNMP product expertise.
 
     # Button text
     buttontext: Learn more
@@ -70,15 +70,11 @@ params:
   - title: Products
     url: "#section1"
   - title: Services
-    url: "#section5"
+    url: "#section2"
   - title: Blog
     url: https://docs.lextudio.com/blog/
-  - title: Books
-    sublinks:
-    - title: .NET Legend
-      url: http://www.lulu.com/shop/http://www.lulu.com/shop/yang-li/dot-net-legend/ebook/product-23449893.html
-    - title: Borland Legend More
-      url: https://leanpub.com/borlandlegendmore
+  - title: Contact
+    url: "#section5"
     # - title: Dropdown item
     #   url: /
   # - title: Log in
@@ -124,6 +120,11 @@ params:
     title: Our Products
     subtitle: We offer a mixture of commercial and open source solutions to empower your business.
     tiles:
+    - title: Azure & Security Services
+      icon: catalog
+      text: Architecture, modernization, and security consulting.
+      url: "#section2"
+      buttonText: Learn more
     - title: "#SNMP Family"
       icon: sharpsnmp
       text: Complete C# SNMP solution for .NET developers.
@@ -134,25 +135,20 @@ params:
       text: Most popular Python SNMP library and utilities.
       url: https://www.pysnmp.com
       buttonText: Learn more
-    - title: Full Catalog
-      icon: catalog
-      text: More products for .NET, Python, and IIS users.
-      url: https://docs.lextudio.com
-      buttonText: Learn more
-  # section2:
-  #   title: Our Services
-  #   subtitle: We provide consulting services on our products as well as other technologies.
-  #   features:
-  #   - title: Powerful and unified interface
-  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-  #     # Icon (from /images/illustrations/icons/___.svg)
-  #     icon: laptop-globe
-  #   - title: Cross-device synchronisation
-  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-  #     icon: doc-sync
-  #   - title: Nomad system
-  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-  #     icon: mobile-feed
+
+  section2:
+    title: Our Services
+    subtitle: Azure cloud architecture, modernization, and security expertise—delivered pragmatically.
+    features:
+    - title: Azure Architecture & Modernization
+      text: Design landing zones, migrate workloads, and optimize for cost, scale, resilience, and sustainability.
+      icon: laptop-globe
+    - title: Identities and Cloud Security
+      text: Threat modeling, secure design reviews, identity hardening, Zero Trust alignment, and proactive risk reduction.
+      icon: doc-sync
+    - title: Managed Advisory & Incident Response
+      text: Ongoing guidance, performance & cost tuning, rapid triage, and remediation for Azure and hybrid environments.
+      icon: mobile-feed
   # section3:
   #   title: One platform
   #   subtitle: To rule them all
@@ -177,7 +173,7 @@ params:
   #     img: 3
   section5:
     title: Contact Us
-    subtitle: We'd love to hear from you (product feedback, trials, service requests, etc.)!
+    subtitle: We'd love to hear from you (service requests, product feedback, trials, etc.)!
     buttonText: Send Message
     action: https://formspree.io/f/xayrlaky
     method: POST
@@ -215,12 +211,12 @@ params:
       column1:
         title: "Products"
         links:
+        - text: Service Catalog
+          link: https://docs.lextudio.com
         - text: "#SNMP Family"
           link: https://www.sharpsnmp.com
         - text: PySNMP Family
           link: https://www.pysnmp.com
-        - text: More on Catalog
-          link: https://docs.lextudio.com
         # - text: Our roadmap
         #   link: /
         # - text: AGB
