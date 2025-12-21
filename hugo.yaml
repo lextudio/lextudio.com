@@ -59,11 +59,14 @@ params:
     # urls are optional
     clientlogos:
     - logo: airbus
+      scale: 1.1
     - logo: vodafone
     - logo: sony
     - logo: bosch
     - logo: l3harris
+      scale: 2.0
     - logo: abb
+      scale: 0.9
 
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
@@ -134,11 +137,18 @@ params:
       image: social/ProjectRover.png
       url: https://github.com/lextudio/projectrover
       alt: Project Rover social preview
+    - title: reStructuredText for Visual Studio Code
+      image: social/rst-vscode.png
+      url: https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext
+      alt: reStructuredText for Visual Studio Code social preview
     - title: DotUninstall
       image: social/DotUninstall.png
       url: https://github.com/lextudio/dotuninstall
       alt: DotUninstall social preview
-
+    - title: Obfuscar
+      image: social/Obfuscar.png
+      url: https://github.com/obfuscar/obfuscar
+      alt: Obfuscar social preview
   section2:
     title: Our Services
     subtitle: Azure cloud architecture, modernization, and security expertise—delivered pragmatically.
