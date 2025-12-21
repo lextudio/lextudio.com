@@ -59,14 +59,14 @@ params:
     # urls are optional
     clientlogos:
     - logo: airbus
-      scale: 1.1
+      scale: 1.5
     - logo: vodafone
     - logo: sony
     - logo: bosch
     - logo: l3harris
       scale: 2.0
     - logo: abb
-      scale: 0.9
+      scale: 0.8
 
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
