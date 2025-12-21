@@ -146,7 +146,7 @@ params:
       url: https://github.com/lextudio/dotuninstall
       alt: DotUninstall social preview
     - title: Obfuscar
-      image: social/Obfuscar.png
+      image: social/obfuscar.png
       url: https://github.com/obfuscar/obfuscar
       alt: Obfuscar social preview
   section2:
