@@ -7,7 +7,6 @@ title: LeXtudio Inc.
 #   # workspace: hugo.work
 #   imports:
 #     path: github.com/StefMa/hugo-fresh
-theme: 'hugo-fresh'
 
 googleAnalytics: G-KRSB623LMJ # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
