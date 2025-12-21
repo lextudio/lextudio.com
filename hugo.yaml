@@ -119,22 +119,25 @@ params:
   section1:
     title: Our Products
     subtitle: We offer a mixture of commercial and open source solutions to empower your business.
-    tiles:
-    - title: Azure & Security Services
-      icon: catalog
-      text: Architecture, modernization, and security consulting.
-      url: "#section2"
-      buttonText: Learn more
-    - title: "#SNMP Family"
-      icon: sharpsnmp
-      text: Complete C# SNMP solution for .NET developers.
-      url: https://www.sharpsnmp.com
-      buttonText: Learn more
+    # Replace the original "tiles" with a list of banner images that link to products.
+    # Each banner image should be placed under `static/images/` (we reference paths below).
+    banners:
     - title: PySNMP Family
-      icon: pysnmp
-      text: Most popular Python SNMP library and utilities.
+      image: social/pysnmp.png
       url: https://www.pysnmp.com
-      buttonText: Learn more
+      alt: PySNMP social preview
+    - title: #SNMP Family
+      image: social/sharpsnmp.png
+      url: https://www.sharpsnmp.com
+      alt: #SNMP Family social preview
+    - title: Project Rover
+      image: social/ProjectRover.png
+      url: https://github.com/lextudio/projectrover
+      alt: Project Rover social preview
+    - title: DotUninstall
+      image: social/DotUninstall.png
+      url: https://github.com/lextudio/dotuninstall
+      alt: DotUninstall social preview
 
   section2:
     title: Our Services
