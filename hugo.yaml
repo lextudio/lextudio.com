@@ -47,7 +47,8 @@ params:
     # Hero subtitle (optional)
     subtitle: |
       We are a proudly Canadian company based in Toronto delivering advanced software, Azure cloud architecture & modernization, and security consulting.
-      From startups to Fortune 500 enterprises, we help teams build resilient, cost-efficient, and secure platforms—backed by our SNMP product expertise.
+
+      From startups to Fortune 500 enterprises, we help teams build resilient, cost-efficient, and secure platforms—backed by our expertise on SNMP, Azure, .NET, Python, and security.
 
     # Button text
     buttontext: Learn more
@@ -224,7 +225,7 @@ params:
       column1:
         title: "Products"
         links:
-        - text: Service Catalog
+        - text: Full Catalog
           link: https://docs.lextudio.com
         - text: "#SNMP Family"
           link: https://www.sharpsnmp.com
@@ -237,18 +238,18 @@ params:
       column2:
         title: "Services"
         links:
-        - text: Bugfixes
+        - text: Patching
           link: https://docs.lextudio.com/services/patching.html
         - text: Consulting
           link: https://docs.lextudio.com/services/consulting.html
-        - text: Trainings
+        - text: Training
           link: https://docs.lextudio.com/services/training.html
         # - text: Developers
         #   link: /
       column3:
-        title: "Docs"
+        title: "Resources"
         links:
-        - text: "LeXtudio Docs"
+        - text: Documentation
           link: https://docs.lextudio.com/
         - text: Blog
           link: https://docs.lextudio.com/blog/
