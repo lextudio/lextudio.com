@@ -62,13 +62,13 @@
 }
 
 .navbar.is-fresh {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(68, 79, 96, 0.08);
 }
 
 #navbar-clone {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(68, 79, 96, 0.08);
 }
@@ -78,12 +78,34 @@ footer.footer-dark .footer-logo img {
 }
 
 /* Product banners used in section1 */
+#section1 .product-grid {
+  --columnGap: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  border-left: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#section1 .banner-card {
+  border-right: 1px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#section1 .column.is-half {
+  padding: 0;
+}
+
+#section1 .banner-card a {
+  display: block;
+}
+
 .product-banner {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 /* Service cards for section2 */
