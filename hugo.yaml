@@ -129,10 +129,10 @@ params:
       image: social/pysnmp.png
       url: https://www.pysnmp.com
       alt: PySNMP social preview
-    - title: #SNMP Family
+    - title: C# SNMP Family
       image: social/sharpsnmp.png
       url: https://www.sharpsnmp.com
-      alt: #SNMP Family social preview
+      alt: C# SNMP Family social preview
     - title: Project Rover
       image: social/ProjectRover.png
       url: https://github.com/lextudio/projectrover
