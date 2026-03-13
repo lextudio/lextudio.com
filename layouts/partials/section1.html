@@ -13,17 +13,59 @@
 
     <div class="content-wrapper">
       {{- if $banners }}
+      {{- /* separate fullwidth banners from regular banners */ -}}
+      {{- $full := where $banners "fullwidth" true }}
+      {{- $regular := where $banners "fullwidth" "ne" true }}
+
+      {{- if $full }}
+      <div class="product-fullwidth-wrapper">
+        {{- range $full }}
+        <div class="product-full-banner revealOnScroll" data-animation="fadeInUp">
+          <a href="{{ .url }}">
+            {{- if .image }}
+            <img src="{{ printf "images/%s" .image | relURL }}" alt="{{ .alt | default .title }}" class="product-banner product-banner--full">
+            {{- else }}
+            <div class="product-text-banner product-text-banner--full">
+              <div>
+                <div class="product-text-title">{{ .title }}</div>
+                {{- with .description }}<div class="product-text-desc">{{ . }}</div>{{- end }}
+              </div>
+              <div class="product-text-actions">
+                <a class="button cta rounded secondary-btn raised" href="{{ .url }}">Learn more</a>
+              </div>
+            </div>
+            {{- end }}
+          </a>
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+
+      {{- if $regular }}
       <div class="columns is-multiline is-variable is-4 product-grid">
-        {{- range $banners }}
+        {{- range $regular }}
         <div class="column is-half">
           <div class="banner-card revealOnScroll" data-animation="fadeInUp">
             <a href="{{ .url }}">
+              {{- if .image }}
               <img src="{{ printf "images/%s" .image | relURL }}" alt="{{ .alt | default .title }}" class="product-banner">
+              {{- else }}
+              <div class="product-text-banner">
+                <div>
+                  <div class="product-text-title">{{ .title }}</div>
+                  {{- with .description }}<div class="product-text-desc">{{ . }}</div>{{- end }}
+                </div>
+                <div class="product-text-actions">
+                  <a class="button cta rounded secondary-btn raised" href="{{ .url }}">Learn more</a>
+                </div>
+              </div>
+              {{- end }}
             </a>
           </div>
         </div>
         {{- end }}
       </div>
+      {{- end }}
       {{- else }}
       <div class="columns">
         {{- range $tiles }}

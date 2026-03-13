@@ -161,3 +161,81 @@ input.input.is-accent-focus:focus {
 input.input.is-accent-focus:focus ~ span.icon i {
   color: #4FC1EA;
 }
+
+/* Text-only product banner */
+#section1 .product-text-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  min-height: 160px;
+  text-align: center;
+  background-color: #0f2b45; /* dark blue block to contrast images */
+}
+
+#section1 .product-text-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+#section1 .product-text-desc {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+#section1 .product-text-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  min-height: 180px;
+  text-align: center;
+  background: linear-gradient(180deg, #12324a 0%, #0f2b45 100%);
+}
+
+#section1 .product-text-actions {
+  margin-top: 1rem;
+}
+
+#section1 .product-text-banner .button {
+  border-color: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  #section1 .product-text-banner {
+    padding: 3rem 2rem;
+    min-height: 200px;
+  }
+}
+
+/* Full-width centered product banner */
+.product-fullwidth-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.product-full-banner {
+  width: 100%;
+  max-width: 980px;
+}
+
+.product-banner--full {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(3,10,18,0.18);
+}
+
+.product-text-banner--full {
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #0d334a 0%, #0b2a3f 100%);
+}

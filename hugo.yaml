@@ -149,6 +149,11 @@ params:
       image: social/obfuscar.png
       url: https://github.com/obfuscar/obfuscar
       alt: Obfuscar social preview
+    - title: (New!) SNMP Studio for Visual Studio Code
+      url: https://www.sharpsnmp.com/#section-studio
+      # text-only banner (no image) — rendered as a simple text card
+      description: "A powerful cross-platform SNMP workspace with modern UX and advanced features for professionals."
+      fullwidth: true
   section2:
     title: Our Services
     subtitle: Azure cloud architecture, modernization, and security expertise—delivered pragmatically.
