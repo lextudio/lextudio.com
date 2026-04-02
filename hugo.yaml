@@ -72,6 +72,8 @@ params:
   navbar:
   - title: Products
     url: "#section1"
+  - title: Highlight
+    url: "#section3"
   - title: Services
     url: "#section2"
   - title: Blog
@@ -154,11 +156,30 @@ params:
       # text-only banner (no image) — rendered as a simple text card
       description: "A powerful cross-platform SNMP workspace with modern UX and advanced features for professionals."
       fullwidth: true
+  section3:
+    title: VS Code Tools for WPF
+    subtitle: Modern WPF workflow with a visual designer and Hot Reload inside the editor.
+    buttonText: Learn more in Marketplace
+    buttonLink: "https://marketplace.visualstudio.com/items?itemName=lextudio.vscode-wpf"
+    designer:
+      image: wpf-designer.png
+      alt: WPF XAML visual designer inside Visual Studio Code
+      caption: Visual designer for WPF layouts
+    video:
+      file: wpf-hot-reload.mp4
+      caption: Hot Reload keeps the edit-test loop fast
+    highlights:
+    - title: Visual Designer
+      text: Work with a familiar layout surface while keeping XAML, source control, and the editor in sync.
+    - title: Hot Reload
+      text: Push changes instantly and iterate on WPF UI without restarting the app every time.
+    - title: Friendly Workflow
+      text: Keep the tools lightweight for developers while preserving the native Windows desktop UI experience.
   section2:
     title: Our Services
-    subtitle: Azure cloud architecture, modernization, and security expertise—delivered pragmatically.
+    subtitle: AI tools adoption, app modernization, and security expertise—delivered pragmatically.
     features:
-    - title: Azure Architecture & Modernization
+    - title: AI Adoption & App Modernization
       text: Design landing zones, migrate workloads, and optimize for cost, scale, resilience, and sustainability.
       icon: laptop-globe
     - title: Identities and Cloud Security
@@ -231,7 +252,7 @@ params:
         links:
         - text: Full Catalog
           link: https://docs.lextudio.com
-        - text: "#SNMP Family"
+        - text: "C# SNMP Family"
           link: https://www.sharpsnmp.com
         - text: PySNMP Family
           link: https://www.pysnmp.com

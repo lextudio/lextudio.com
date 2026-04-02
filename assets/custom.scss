@@ -1,4 +1,42 @@
 /* Custom overrides to avoid editing the theme submodule. */
+body {
+  background: #eef3f7;
+}
+
+.hero.is-default.is-bold {
+  background:
+    radial-gradient(circle at top left, rgba(79, 193, 234, 0.16), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(15, 43, 69, 0.1), transparent 28%),
+    linear-gradient(180deg, #fcfeff 0%, #eef4f9 100%) !important;
+}
+
+.hero-body {
+  background: transparent;
+}
+
+.section {
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.section .title-wrapper .subtitle {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section .divider {
+  opacity: 0.85;
+}
+
 .hero-foot {
   .client-logos {
     display: flex;
@@ -22,10 +60,22 @@
     width: 100%;
     height: 84px;
     padding: 12px 18px;
-    background-color: transparent;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
     border-radius: 14px;
     text-decoration: none;
     overflow: hidden;
+  }
+  .client-logo--vodafone,
+  .client-logo--abb,
+  .client-logo--l3harris {
+    background: #f8fafc;
+    border-color: rgba(15, 23, 42, 0.06);
+  }
+  .client-logo--airbus {
+    background: #f0f1f9;
+    border-color: rgba(15, 23, 42, 0.05);
   }
   img.partner-logo {
     width: 100%;
@@ -78,18 +128,35 @@ footer.footer-dark .footer-logo img {
 }
 
 /* Product banners used in section1 */
+#section1.section.section-feature-grey {
+  background-color: #f1f7fb !important;
+  background-image:
+    radial-gradient(circle at top right, rgba(79, 193, 234, 0.14), transparent 28%),
+    linear-gradient(180deg, #f9fcfe 0%, #edf4f9 100%) !important;
+}
+
+#section1 .title-wrapper .title,
+#section1 .title-wrapper .subtitle {
+  color: #0f2135;
+}
+
+#section1 .divider {
+  background: rgba(15, 33, 53, 0.14);
+}
+
 #section1 .product-grid {
   --columnGap: 0.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.6);
-  border-left: 1px solid rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  border-left: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 #section1 .banner-card {
-  border-right: 1px solid rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-  border-radius: 0;
+  border-right: 1px solid rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 12px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
 }
 
 #section1 .column.is-half {
@@ -218,24 +285,198 @@ input.input.is-accent-focus:focus ~ span.icon i {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .product-full-banner {
   width: 100%;
-  max-width: 980px;
+  max-width: 760px;
 }
 
 .product-banner--full {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
-  box-shadow: 0 12px 30px rgba(3,10,18,0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(3,10,18,0.16);
 }
 
 .product-text-banner--full {
-  padding: 3rem 2rem;
-  border-radius: 8px;
+  padding: 1.75rem 1.5rem;
+  border-radius: 12px;
   background: linear-gradient(180deg, #0d334a 0%, #0b2a3f 100%);
+}
+
+.product-text-banner--full .product-text-title {
+  font-size: 1.25rem;
+}
+
+.product-text-banner--full .product-text-desc {
+  font-size: 0.9rem;
+}
+
+.product-text-banner--full .button {
+  padding: 0.9rem 1.4rem;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 769px) {
+  .product-text-banner--full {
+    padding: 2rem 1.75rem;
+  }
+}
+
+#section2.section {
+  background-color: #ffffff !important;
+  background-image: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%) !important;
+}
+
+#section2 .title-wrapper .title,
+#section2 .title-wrapper .subtitle {
+  color: #122033;
+}
+
+#section2 .divider {
+  background: rgba(15, 23, 42, 0.12);
+}
+
+#section2 .service-cards {
+  margin-top: 1.25rem;
+}
+
+/* WPF Tools section */
+#section3.section {
+  position: relative;
+  overflow: hidden;
+  color: #eaf3fb;
+  background:
+    radial-gradient(circle at top left, rgba(79, 193, 234, 0.18), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.08), transparent 28%),
+    linear-gradient(135deg, #071421 0%, #0b2233 45%, #123e56 100%) !important;
+  border-top: 1px solid rgba(127, 216, 240, 0.14);
+  border-bottom: 1px solid rgba(127, 216, 240, 0.14);
+}
+
+#section3 .title-wrapper .title,
+#section3 .title-wrapper .subtitle {
+  color: inherit;
+}
+
+#section3 .divider {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+#section3 .wpf-tools-panel {
+  margin-top: 1.25rem;
+}
+
+#section3 .wpf-tools-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+#section3 .wpf-tools-copy {
+  height: 100%;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 60px rgba(4, 14, 24, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+#section3 .wpf-tools-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  margin: 0 0 1rem;
+  border-radius: 999px;
+  background: rgba(79, 193, 234, 0.12);
+  color: #7fd8f0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#section3 .wpf-tools-copy-inner {
+  display: grid;
+  gap: 1rem;
+}
+
+#section3 .wpf-tools-highlight {
+  padding: 1rem 1rem 1rem 1.1rem;
+  border-left: 2px solid rgba(127, 216, 240, 0.7);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0 16px 16px 0;
+}
+
+#section3 .wpf-tools-highlight-title {
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#section3 .wpf-tools-highlight-text {
+  margin: 0;
+  color: rgba(234, 243, 251, 0.8);
+}
+
+#section3 .wpf-tools-actions {
+  margin-top: 1.5rem;
+}
+
+#section3 .wpf-tools-media {
+  display: grid;
+  gap: 1rem;
+}
+
+#section3 .wpf-media-card {
+  margin: 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 18px 50px rgba(4, 14, 24, 0.28);
+  backdrop-filter: blur(12px);
+}
+
+#section3 .wpf-media-card img,
+#section3 .wpf-media-card video {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  background: #08121d;
+}
+
+#section3 .wpf-media-card figcaption {
+  margin-top: 0.75rem;
+  padding: 0 0.25rem 0.15rem;
+  color: rgba(234, 243, 251, 0.75);
+  font-size: 0.92rem;
+}
+
+#section5.section.section-light-grey {
+  background-color: #f4f8fb !important;
+  background-image:
+    radial-gradient(circle at top right, rgba(79, 193, 234, 0.12), transparent 26%),
+    linear-gradient(180deg, #f9fbfd 0%, #edf3f7 100%) !important;
+}
+
+#section5 .title-wrapper .title,
+#section5 .title-wrapper .subtitle {
+  color: #122033;
+}
+
+#section5 .divider {
+  background: rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 1023px) {
+  #section3 .wpf-tools-panel {
+    grid-template-columns: 1fr;
+  }
 }

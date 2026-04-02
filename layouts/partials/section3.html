@@ -1,0 +1,50 @@
+{{- $section3   := .Site.Params.section3 }}
+{{- $title      := index $section3 "title" }}
+{{- $subtitle   := index $section3 "subtitle" }}
+{{- $highlights := index $section3 "highlights" }}
+{{- $buttonText := index $section3 "buttonText" }}
+{{- $buttonLink := index $section3 "buttonLink" }}
+{{- $designer   := index $section3 "designer" }}
+{{- $video      := index $section3 "video" }}
+<section class="section section-wpf is-medium" id="section3">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
+      <h3 class="subtitle is-5">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="wpf-tools-panel">
+      <div class="wpf-tools-copy revealOnScroll" data-animation="fadeInUp">
+        <p class="wpf-tools-eyebrow">WPF inside VS Code</p>
+        <div class="wpf-tools-copy-inner">
+          {{- range $highlights }}
+          <div class="wpf-tools-highlight">
+            <p class="wpf-tools-highlight-title">{{ .title }}</p>
+            <p class="wpf-tools-highlight-text">{{ .text }}</p>
+          </div>
+          {{- end }}
+        </div>
+        <div class="wpf-tools-actions">
+          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
+            {{ $buttonText }}
+          </a>
+        </div>
+      </div>
+
+      <div class="wpf-tools-media">
+        <figure class="wpf-media-card wpf-media-card--image revealOnScroll" data-animation="fadeInUp">
+          <img src="{{ printf "images/%s" $designer.image | relURL }}" alt="{{ $designer.alt }}">
+          <figcaption>{{ $designer.caption }}</figcaption>
+        </figure>
+
+        <figure class="wpf-media-card wpf-media-card--video revealOnScroll" data-animation="fadeInUp">
+          <video autoplay muted loop playsinline controls preload="metadata" poster="{{ printf "images/%s" $designer.image | relURL }}">
+            <source src="{{ printf "videos/%s" $video.file | relURL }}" type="video/mp4">
+          </video>
+          <figcaption>{{ $video.caption }}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
