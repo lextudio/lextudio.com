@@ -14,7 +14,7 @@
       <div class="column">
         <div class="footer-logo">
           {{- if $logoLink }}<a href="{{ $logoLink }}">{{- end }}
-          <img src="{{ printf "images/logos/%s" $logoImage | relURL }}" alt="{{ $logoImage }}" width="{{ $footerLogoWidth }}" height="{{ $footerLogoHeight }}">
+          <img src="{{ printf "images/%s" $logoImage | relURL }}" alt="{{ $logoImage }}" width="{{ $footerLogoWidth }}" height="{{ $footerLogoHeight }}">
           {{- if $logoLink }}</a>{{- end }}
         </div>
       </div>
