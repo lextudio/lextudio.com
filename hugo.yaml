@@ -180,7 +180,7 @@ params:
     subtitle: AI tools adoption, app modernization, and security expertise—delivered pragmatically.
     features:
     - title: AI Adoption & App Modernization
-      text: Design landing zones, migrate workloads, and optimize for cost, scale, resilience, and sustainability.
+      text: Workflow design with GitHub Copilot, OpenAI Codex, and Anthropic Claude. Modernization for .NET applications.
       icon: laptop-globe
     - title: Identities and Cloud Security
       text: Threat modeling, secure design reviews, identity hardening, Zero Trust alignment, and proactive risk reduction.
